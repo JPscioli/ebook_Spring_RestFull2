@@ -10,6 +10,5 @@ public class RestfullEbookApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RestfullEbookApplication.class, args);
 	}
-	@Autowired
-	private ExemploService exemploService;
+
 }
