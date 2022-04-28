@@ -2,6 +2,7 @@ package com.example.restfull_ebook;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,5 +39,11 @@ public class ExemploController {
         response.setData(empresaDto);
         return ResponseEntity.ok(response);
     }
+//    @GetMapping(value = "/api/exemplo/{nome}")
+//    @PreAuthorize("hasAnyRole('ADMIN')")
+//    public String exemplo(@PathVariable("nome") String nome) {
+//        return "Olá " + nome;
+//    }
+
 
 }
